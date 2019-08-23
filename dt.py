@@ -4,6 +4,8 @@ string1=input("Please Write your Sentence :")
 
 String_without_extra_spaces=""
 word_counter=1
+if(string1[0]==" "):
+    word_counter = 0
 try:
     for index,value in enumerate(string1):
         if not(string1[index]==" " and string1[index+1]==" "):
